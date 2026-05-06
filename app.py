@@ -101,6 +101,9 @@ if st.button("Predict"):
     st.write(f"Probability of churn: {proba:.2f}")
     st.write(f"Prediction: {prediction}")
 
+with st.expander("📊 Most influential features"):
+    st.image("features_affecting_churn.png")
+
 
 with st.expander("Credits"):
     st.markdown("---")
