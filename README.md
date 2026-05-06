@@ -22,7 +22,7 @@ Focus: interpretability and business-driven threshold tuning
 churn probability
 final prediction (Churn / No Churn)
 ## ⚙️ How to Run Locally
-conda env create -f environment.yml
+conda env create -f environment_dev.yml
 conda activate churn-env
 streamlit run app.py
 📂 Project Structure
