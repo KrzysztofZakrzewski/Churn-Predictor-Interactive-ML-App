@@ -2,18 +2,8 @@
 
 import pandas as pd
 import numpy as np
-import seaborn as sns
 import streamlit as st
-import matplotlib.pyplot as plt
-import plotly.express as px
-from IPython.display import Markdown
-from IPython.display import Markdown, display
 import pandas as pd
-
-#sci-kitlear
-from sklearn.model_selection import train_test_split, cross_val_score
-from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import roc_curve, roc_auc_score, confusion_matrix, ConfusionMatrixDisplay
 
 import joblib
 
