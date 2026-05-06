@@ -8,7 +8,7 @@ dependencies:
   - pip=24.0
   - numpy=1.26.4
   - pandas
-  - streamlity
+  - streamlit
   - seaborn=0.13.2
   - matplotlib
   - plotly=5.22.0
