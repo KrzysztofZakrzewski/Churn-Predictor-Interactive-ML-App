@@ -11,11 +11,32 @@ st.title('Customer Retention Model')
 st.write('Predicts customer churn risk based on key features.')
 st.write('➡️ Fill in customer details to predict churn risk.')
 
-loaded = joblib.load("clasyfication_model/churn_model_final.pkl")
+# Logistic Regression
+loaded_lr = joblib.load(
+    "clasyfication_model/churn_model_final.pkl"
+)
 
-model = loaded["model"]
-threshold = loaded["threshold"]
-features = loaded["features"]
+# Gradient Boosting
+loaded_gb = joblib.load(
+    "clasyfication_model/gradient_boosting_model.pkl"
+)
+
+model_choice = st.selectbox(
+    "Choose Model",
+    ["Logistic Regression", "Gradient Boosting"]
+)
+
+if model_choice == "Logistic Regression":
+
+    model = loaded_lr["model"]
+    threshold = loaded_lr["threshold"]
+    features = loaded_lr["features"]
+
+else:
+
+    model = loaded_gb["model"]
+    threshold = loaded_gb["threshold"]
+    features = loaded_gb["features"]
 
 st.title("Customer Churn Prediction")
 
@@ -101,8 +122,10 @@ if st.button("Predict"):
     st.write(f"Probability of churn: {proba:.2f}")
     st.write(f"Prediction: {prediction}")
 
-with st.expander("📊 Most influential features"):
-    st.image("features_affecting_churn.png")
+with st.expander("📊 LOGISTIC REGRESION Most influential features"):
+    st.image("LR_features_affecting_churn.png")
+with st.expander("📊 GRADIENT BOOSTING CLASSIFIER Most influential features"):
+    st.image("GBC_features_affecting_churn.png")
 
 
 with st.expander("Credits"):
