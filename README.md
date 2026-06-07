@@ -44,9 +44,13 @@ Telco Customer Churn dataset
 The model expects preprocessed input (handled internally in the app)
 Features are aligned with the training dataset using consistent encoding
 🔗 Links
+
 🌐 Portfolio: [https://krzysztofzakrzewski.github.io/portfolio/]
+
 💼 LinkedIn: [https://www.linkedin.com/in/krzysztof-zakrzewski-206554258/]
+
 📦 EDA project: [https://krzysztofzakrzewski.github.io/portfolio/Telco_Customer_clasyfication_EDA/]
+
 📦 ML project: [https://krzysztofzakrzewski.github.io/portfolio/Telco_Customer_clasyfication_ML/]
 
 This app was built to demonstrate how machine learning models can be:
